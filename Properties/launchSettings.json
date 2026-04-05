@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "LongestSubstring": {
+      "commandName": "Project",
+      "commandLineArgs": "LongestSubstring"
+    },
+    "MaximumSumSubarrayK": {
+      "commandName": "Project",
+      "commandLineArgs": "MaximumSumSubarrayK"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
