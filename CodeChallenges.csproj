@@ -8,8 +8,4 @@
     <StartupObject></StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="TwoPointers\" />
-  </ItemGroup>
-
 </Project>

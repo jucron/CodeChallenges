@@ -1,4 +1,5 @@
 ﻿using System;
+using CodeChallenges.TwoPointers;
 using CodeChallenges.WindowSliding;
 
 namespace CodeChallenges
@@ -18,6 +19,12 @@ namespace CodeChallenges
                     break;
                 case "StockTrending":
                     StockTrending.Run();
+                    break;
+                case "ContainerWithMostWater":
+                    ContainerWithMostWater.Run();
+                    break;
+                case "ThreeSumTriplets":
+                    ThreeSumTriplets.Run();
                     break;
                 default:
                     Console.WriteLine("Initialization is wrong, please double check launchSettings class name: " + args[0]);

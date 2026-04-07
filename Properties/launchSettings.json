@@ -11,6 +11,14 @@
         "StockTrending": {
             "commandName": "Project",
             "commandLineArgs": "StockTrending"
+        },
+        "ContainerWithMostWater": {
+            "commandName": "Project",
+            "commandLineArgs": "ContainerWithMostWater"
+        },
+        "ThreeSumTriplets": {
+            "commandName": "Project",
+            "commandLineArgs": "ThreeSumTriplets"
         }
     }
 }

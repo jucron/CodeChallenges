@@ -14,7 +14,7 @@ Output: [0,1][2,4]
 
 Input:  nums = [25, 35, 100, 80, 150, 15, 50, 200, 210, 20, 30]
 Output: [0,2][3,4][5,8]
-Constraints:
+
 
  * */
 
@@ -37,7 +37,6 @@ namespace CodeChallenges.WindowSliding
 
                 Console.WriteLine($"{Print(stock)}: {Print(result.Select(r =>$"[{r.buy},{r.sell}]"))}");
             }
-            //input.ForEach(x => Console.WriteLine($"{Print(x)}: {$"{GetStockTrending(x)}"));
         }
 
         private static string Print(int[] array)
