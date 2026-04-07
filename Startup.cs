@@ -16,6 +16,9 @@ namespace CodeChallenges
                 case "MaximumSumSubarrayK":
                     MaximumSumSubarrayK.Run();
                     break;
+                case "StockTrending":
+                    StockTrending.Run();
+                    break;
                 default:
                     Console.WriteLine("Initialization is wrong, please double check launchSettings class name: " + args[0]);
                     break;

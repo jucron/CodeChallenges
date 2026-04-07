@@ -33,7 +33,6 @@ namespace CodeChallenges.WindowSliding
         {
             List<(int[] nums, int k)> input = [(new[]{2, 1, 5, 1, 3, 2}, 3), (new[] { 2, 3, 4, 1, 5 }, 2), (new[] { 1, 1, 1, 1, 1 }, 3)];
 
-
             input.ForEach(x => Console.WriteLine($"{x}: {GetMaximumSumSubarrayK(x.nums,x.k)}"));
         }
 
@@ -41,30 +40,34 @@ namespace CodeChallenges.WindowSliding
         {
             /*
              * [2, 1, 5, 1, 3, 2], k = 3
-             * 2
-             * 2, 1
-             * 2, 1, 5 -> sum -> compute maxSum
-             *    1, 5, 1 -> sum -> compute maxSum
+             * 2  -> l: 0, r:0, sum:2, maxSum:2
+             * 2, 1  -> l: 0, r:1, sum:3, maxSum:3
+             * 2, 1, 5 -> sum -> compute maxSum -> l: 0, r:2, sum:8, maxSum:8
+             *    1, 5, 1 -> sum -> compute maxSum -> l: 1, r:3, sum:7, maxSum:8
              *       5, 1, 3 -> sum -> compute maxSum
              *          1, 3, 2 -> sum -> compute maxSum -> stop
              * */
 
             int left = 0;
             int maxSum = 0;
+            int currentSum = 0;
+
             int currentArraySize = 0;
 
-            for (int right = 0; right < nums.Length;){
+            for (int right = 0; right < nums.Length; right++){
                 currentArraySize++;
+                currentSum += nums[right];
 
-                if (currentArraySize <)
+                if (currentArraySize > k)
                 {
-                    
+                    currentSum -= nums[left];
+                    left++;
                 }
-
+                maxSum = Math.Max(maxSum, currentSum);
             }
 
 
-            return 0;
+            return maxSum;
         }
     }
 }
